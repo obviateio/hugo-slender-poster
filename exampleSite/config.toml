@@ -1,7 +1,7 @@
 baseURL = "https://example.com"
 title = "Hugo Themes"
-copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
-paginate = 2
+copyright = "Copyright © 2008–2019, The Hugo Authors & Test Data; all rights reserved."
+paginate = 6
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -34,6 +34,7 @@ author = "authors"
   homepageImage = "/images/homepage-image.jpg"
   share = true
   showLanguageSwitcher = false
+  mainSections = ["post", "posts"]
 
   [params.social]
     rss = true

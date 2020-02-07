@@ -9,9 +9,7 @@ tags = [
     "markdown",
     "text",
 ]
-images = [
-    "placeholder-text.jpg",
-]
+featured_image = "placeholder-text.jpg"
 +++
 
 Lorem est tota propiore conpellat pectoribus de
