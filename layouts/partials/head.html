@@ -3,34 +3,43 @@
 <title>{{ .Site.Title }}</title>
 
 {{- if .Description -}}
-  <meta name="description" content="{{ .Description }}">
+<meta name="description" content="{{ .Description }}">
 {{- else if .Site.Params.description -}}
-  <meta name="description" content="{{ .Site.Params.description }}">
+<meta name="description" content="{{ .Site.Params.description }}">
 {{- end -}}
+<!--link href="{{ print "dist/fa-all.min.css" | relURL }}" rel="stylesheet"-->
+<!--load all styles -->
+<meta name="author"
+    content="{{ if .Params.authors }}{{ delimit .Params.authors ", " }}{{ else }}{{ .Site.Params.author }}{{ end }}">
 
-<meta name="author" content="{{ if .Params.authors }}{{ delimit .Params.authors ", " }}{{ else }}{{ .Site.Params.author }}{{ end }}">
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js">
+</script>
 
 {{ if .Site.Params.prismJS.enable }}
-    {{ if .Site.Params.prismJS.theme }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-{{ .Site.Params.prismJS.theme }}.min.css">
-    {{ else }}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
-    {{ end }}
+{{ if .Site.Params.prismJS.theme }}
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism-{{ .Site.Params.prismJS.theme }}.min.css">
+{{ else }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css">
+{{ end }}
 {{ end }}
 
 {{ with index .Site.Data "chunky-poster" }}
-    {{ range $vendor := .assets }}
-        {{ if $vendor.css }}
-            <link rel="stylesheet" href="{{ print "dist/" $vendor.css | relURL }}">
-        {{ end }}
-    {{ end }}
+{{ range $vendor := .assets }}
+{{ if $vendor.css }}
+<link rel="stylesheet" href="{{ print "dist/" $vendor.css | relURL }}">
 {{ end }}
+{{ end }}
+{{ end }}
+
+
 
 <link rel="canonical" href="{{ .Permalink }}">
 {{- with .OutputFormats.Get "RSS" }}
-  <link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
-  <link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}">
+<link href="{{ .Permalink }}" rel="alternate" type="application/rss+xml" title="{{ $.Site.Title }}">
+<link href="{{ .Permalink }}" rel="feed" type="application/rss+xml" title="{{ $.Site.Title }}">
 {{- end -}}
+
 
 {{- template "_internal/opengraph.html" . -}}
 {{- template "_internal/google_news.html" . -}}

@@ -1,0 +1,32 @@
+{{ $pag := $.Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+<div>
+    <ul class="pagination">
+        <li class="page-item page-first">
+            {{ if $pag.HasPrev }}
+
+            <a {{ if $pag.HasPrev }}href="{{ $pag.First.URL }}" {{ end }} class="page-link" aria-label="First"><span
+                    aria-hidden="true"><i class="fa fa-fast-backward"></i> First page</span></a>
+            {{ end }}
+        </li>
+        <li class="page-item page-prev">
+            {{ if $pag.HasPrev }}
+            <a {{ if $pag.HasPrev }}href="{{ $pag.Prev.URL }}" {{ end }} class="page-link" aria-label="Previous"><span
+                    aria-hidden="true"><i class="fa fa-step-backward"></i> Prev page</span></a>
+            {{ end }}
+        </li>
+        <li class="page-item page-next">
+            {{ if $pag.HasNext }}
+            <a {{ if $pag.HasNext }}href="{{ $pag.Next.URL }}" {{ end }} class="page-link" aria-label="Next"><span
+                    aria-hidden="true">Next page <i class="fa fa-step-forward"></i> </span></a>
+            {{ end }}
+        </li>
+        <li class="page-item page-last">
+            {{ if $pag.HasNext }}
+            <a {{ if $pag.HasNext }}href="{{ $pag.Last.URL }}" {{ end }} class="page-link" aria-label="Last"><span
+                    aria-hidden="true">Last page <i class="fa fa-fast-forward"></i></span></a>
+            {{ end }}
+        </li>
+    </ul>
+</div>
+{{ end }}
