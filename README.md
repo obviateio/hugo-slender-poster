@@ -1,5 +1,9 @@
 # Slender Poster
 
+[![CircleCI](https://img.shields.io/circleci/build/github/obviateio/hugo-slender-poster)](https://circleci.com/gh/obviateio/hugo-slender-poster/tree/master)
+![GitHub issues](https://img.shields.io/github/issues/obviateio/hugo-slender-poster)
+![GitHub stars](https://img.shields.io/github/stars/obviateio/hugo-slender-poster?style=social)
+
 A bootstrap 4 based blog theme for [Hugo](https://gohugo.io/) static-site-generator. Forked from [hugo-theme-chunky-poster](https://github.com/puresyntax71/hugo-theme-chunky-poster). Original design was based on the [Prisma blog](https://www.prisma.io/blog/) and modified from there.
 
 **Note:** While based originally on the Chunky Poster theme, several key pieces of functionality were modified, making this theme a not-drop-in-replacement.
