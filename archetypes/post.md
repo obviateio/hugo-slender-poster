@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-images: []
+#featured_image: 
 categories: []
 tags: []
 authors: []

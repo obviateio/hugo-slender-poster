@@ -1,8 +1,8 @@
-# Slender poster
+# Slender Poster
 
-A bootstrap 4 based blog theme. Forked from [hugo-theme-chunky-poster](https://github.com/puresyntax71/hugo-theme-chunky-poster). Original design is based on the [Prisma blog](https://www.prisma.io/blog/).
+A bootstrap 4 based blog theme for [Hugo](https://gohugo.io/) static-site-generator. Forked from [hugo-theme-chunky-poster](https://github.com/puresyntax71/hugo-theme-chunky-poster). Original design was based on the [Prisma blog](https://www.prisma.io/blog/) and modified from there.
 
-*Note:* While based originally on the Chunky Poster theme, several key pieces of functionality were modified, making this theme a not-drop-in-replacement.
+**Note:** While based originally on the Chunky Poster theme, several key pieces of functionality were modified, making this theme a not-drop-in-replacement.
 
 # Screenshot
 
@@ -21,7 +21,13 @@ A bootstrap 4 based blog theme. Forked from [hugo-theme-chunky-poster](https://g
 # Usage
 
 ```shell
-git clone https://github.com/obviateio/hugo-slender-poster.git
+cd your-hugo-side
+git submodule add https://github.com/obviateio/hugo-slender-poster.git themes/hugo-slender-poster
+```
+or
+```shell
+cd your-hugo-site
+git clone https://github.com/obviateio/hugo-slender-poster.git ./themes/hugo-slender-poster
 ```
 
 Check out the configuration at [`exampleSite/config.toml`](exampleSite/config.toml) for configuring your Hugo site.
@@ -42,27 +48,27 @@ The authors structure is based on this [blog post](https://www.netlify.com/blog/
     ---
     ```
 
-## Content images
+## Featured images
 
-The images structure is based on this [blog post](https://forestry.io/blog/how-to-use-hugo-s-image-processing-with-forestry/).
+The images structure is inspired by this [blog post](https://forestry.io/blog/how-to-use-hugo-s-image-processing-with-forestry/).
 
-Upload the images that will be used on content pages under `content/images` and create the file `content/images/index.md` with the front matter:
-
+**Step 1** - Create file `content/images/index.md` with the [front matter](https://gohugo.io/content-management/front-matter/):
 ```yaml
 ---
 headless: true
 ---
 ```
 
-Set the path to the image in a `post` content under the `images` property:
+**Step 2** - Add the image (ex: `your-image.png`) to be used as featured image, to `content/images` (ex: `content/images/your-image.png`)
+
+
+**Step 3** - Add the `featured_image` property to your post front matter:
 
 ```yaml
 ---
-images: ["/images/image.png"]
+featured_image: "your-image.png"
 ---
 ```
-
-The first image on the list will be used as the "cover" image on a post.
 
 ## Prism
 
@@ -111,9 +117,9 @@ Fork the project and run `yarn watch` during development.
 
 The application javascript file is located at `src/js/app.js`.
 
-For customizing SCSS, the main entrypoint is at `src/scss/style.scss`. Bootstrap variables can be overridden in the `_variables.scss` file. The theme's styles are located at `src/scss/chunky-poster.scss`.
+For customizing SCSS, the main entrypoint is at `src/scss/style.scss`. Bootstrap variables can be overridden in the `_variables.scss` file. The theme's styles are located at `src/scss/slender-poster.scss`.
 
-# Credits
+# Credits / Inspirations
 
 * [Chunky Poster](https://github.com/puresyntax71/hugo-theme-chunky-poster)
 * [Ezhil](https://github.com/vividvilla/ezhil)
