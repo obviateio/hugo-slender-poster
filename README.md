@@ -1,14 +1,11 @@
-# Chunky poster
+# Slender poster
 
-[![CircleCI](https://img.shields.io/circleci/build/github/puresyntax71/hugo-theme-chunky-poster)](https://circleci.com/gh/puresyntax71/hugo-theme-chunky-poster/tree/master)
+A bootstrap 4 based blog theme. Forked from [hugo-theme-chunky-poster](https://github.com/puresyntax71/hugo-theme-chunky-poster). Original design is based on the [Prisma blog](https://www.prisma.io/blog/).
 
-A simple, bootstrap 4 based blog theme. The structure and design is based on the [Prisma blog](https://www.prisma.io/blog/).
-
-[Demo](https://hugo-theme-chunky-poster.netlify.com) | [Demo 2](https://themes.gohugo.io/theme/hugo-theme-chunky-poster)
+*Note:* While based originally on the Chunky Poster theme, several key pieces of functionality were modified, making this theme a not-drop-in-replacement.
 
 # Screenshot
 
-![Chunky poster](https://github.com/puresyntax71/hugo-theme-chunky-poster/raw/master/images/screenshot-responsive.png)
 
 # Features
 
@@ -19,11 +16,12 @@ A simple, bootstrap 4 based blog theme. The structure and design is based on the
 * LazyLoad
 * Commento
 * Image gallery
+* Pagination
 
 # Usage
 
 ```shell
-git clone https://github.com/puresyntax71/hugo-theme-chunky-poster.git
+git clone https://github.com/obviateio/hugo-slender-poster.git
 ```
 
 Check out the configuration at [`exampleSite/config.toml`](exampleSite/config.toml) for configuring your Hugo site.
@@ -117,6 +115,8 @@ For customizing SCSS, the main entrypoint is at `src/scss/style.scss`. Bootstrap
 
 # Credits
 
+* [Chunky Poster](https://github.com/puresyntax71/hugo-theme-chunky-poster)
+* [Ezhil](https://github.com/vividvilla/ezhil)
 * [Victor Hugo](https://github.com/netlify-templates/victor-hugo)
 * [hugo-theme-even](https://github.com/olOwOlo/hugo-theme-even)
 * [Blank](https://github.com/vimux/blank/)

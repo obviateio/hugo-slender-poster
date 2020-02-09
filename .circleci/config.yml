@@ -7,7 +7,7 @@ jobs:
   test:
     executor:
       name: node/default
-      tag: '13.6.0'
+      tag: "13.6.0"
     steps:
       - checkout
       - node/with-cache:
@@ -17,12 +17,12 @@ jobs:
   build:
     docker:
       - image: cibuilds/hugo:latest
-    working_directory: ~/hugo-theme-chunky-poster
+    working_directory: ~/hugo-slender-poster
     steps:
       - checkout
       - hugo/hugo-build:
           source: exampleSite
-          extra-flags: '--themesDir ../.. -t "hugo-theme-chunky-poster" --baseURL "https://hugo-theme-chunky-poster.netlify.com"'
+          extra-flags: '--themesDir ../.. -t "hugo-slender-poster" --baseURL "https://hugo-slender-poster.netlify.com"'
       - persist_to_workspace:
           root: .
           paths:
@@ -31,7 +31,7 @@ jobs:
   deploy:
     executor:
       name: node/default
-      tag: '13.1.0'
+      tag: "13.1.0"
     working_directory: ~/site
     steps:
       - attach_workspace:

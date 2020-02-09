@@ -1,6 +1,6 @@
 baseURL = "https://example.com"
-title = "Hugo Themes"
-copyright = "Copyright © 2008–2019, The Hugo Authors & Test Data; all rights reserved."
+title = "Hugo Theme Example"
+copyright = "Copyright © 2008–2200, The Hugo Authors & Test Data; all rights reserved."
 paginate = 6
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -8,7 +8,7 @@ enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 googleAnalytics = "UA-XXXX"
 DisqusShortname = ""
-theme = "hugo-theme-chunky-poster"
+theme = "hugo-slender-poster"
 
 [menu]
   [[menu.main]]

@@ -24,7 +24,7 @@
 {{ end }}
 {{ end }}
 
-{{ with index .Site.Data "chunky-poster" }}
+{{ with index .Site.Data "slender-poster" }}
 {{ range $vendor := .assets }}
 {{ if $vendor.css }}
 <link rel="stylesheet" href="{{ print "dist/" $vendor.css | relURL }}">
