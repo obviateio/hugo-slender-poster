@@ -10,7 +10,6 @@ A bootstrap 4 based blog theme for [Hugo](https://gohugo.io/) static-site-genera
 
 # Screenshot
 
-
 # Features
 
 * Multi-author
