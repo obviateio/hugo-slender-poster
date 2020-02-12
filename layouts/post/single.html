@@ -5,31 +5,41 @@
         <div class="col">
             <article>
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="meta text-muted mb-3">
-                            <p class="created text-muted text-uppercase font-weight-bold mb-1">{{ $page.Date.Format "January 2, 2006" }}</p>
-                            <span class="mr-2"><i class="fas fa-book-open mr-2"></i>{{ T "wordCount" $page.WordCount }}</span>
+                    <div class="col-lg-4">
+                        <div class="meta text-muted mb-0">
+                            <p class="created text-muted text-uppercase font-weight-bold mb-1">
+                                {{ $page.Date.Format "January 2, 2006" }}</p>
+                            <span class="mr-2"><i
+                                    class="fas fa-book-open mr-2"></i>{{ T "wordCount" $page.WordCount }}</span>
                             <span><i class="fas fa-clock mr-2"></i>{{ T "readingTime" $page.ReadingTime }}</span>
                         </div>
-
-                        <h1>{{ $page.Title }}</h1>
-
+                    </div>
+                    <div class="col-lg-4 author mb-0">
                         {{ partial "authors.html" $page }}
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <center>
+                            <h1>{{ $page.Title }}</h1>
+                        </center>
+
                     </div>
                 </div>
 
                 {{- with $page.Params.images -}}
-                    {{- $images := . -}}
-                    {{- with $page.Site.GetPage "section" "images" -}}
-                        {{- with .Resources.GetMatch (strings.TrimPrefix "/images/" (index $images 0)) -}}
-                            {{- $image := .Fit "900x500" -}}
-                            <div class="row justify-content-center mb-3">
-                                <div class="col-lg-10">
-                                    <img data-src="{{ $image.RelPermalink }}" class="img-fluid rounded mx-auto d-block" alt="{{ $page.Title }}">
-                                </div>
-                            </div>
-                        {{- end -}}
-                    {{- end -}}
+                {{- $images := . -}}
+                {{- with $page.Site.GetPage "section" "images" -}}
+                {{- with .Resources.GetMatch (strings.TrimPrefix "/images/" (index $images 0)) -}}
+                {{- $image := .Fit "900x500" -}}
+                <div class="row justify-content-center mb-3">
+                    <div class="col-lg-10">
+                        <img data-src="{{ $image.RelPermalink }}" class="img-fluid rounded mx-auto d-block"
+                            alt="{{ $page.Title }}">
+                    </div>
+                </div>
+                {{- end -}}
+                {{- end -}}
                 {{- end -}}
 
                 <div class="row justify-content-center">
@@ -39,13 +49,14 @@
                         </div>
 
                         {{- with $page.Params.tags -}}
-                            <div class="tags my-3">
+                        <div class="tags my-3">
                             {{- range . -}}
-                                <a class="badge badge-pill badge-light border mr-2" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
-                                    <i class="fas fa-tag mr-2"></i>{{ . }}
-                                </a>
+                            <a class="badge badge-pill badge-light border mr-2"
+                                href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">
+                                <i class="fas fa-tag mr-2"></i>{{ . }}
+                            </a>
                             {{- end -}}
-                            </div>
+                        </div>
                         {{- end -}}
 
                         {{ partial "sharer.html" . }}

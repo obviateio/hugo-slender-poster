@@ -1,6 +1,6 @@
 baseURL = "https://example.com"
 title = "Hugo Theme Example"
-copyright = "Copyright © 2008–2200, The Hugo Authors & Test Data; all rights reserved."
+copyright = "Copyright © 2008–2020, The Hugo Authors & Test Data; all rights reserved."
 paginate = 6
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -43,7 +43,7 @@ author = "authors"
     twitter = "https://twitter.com"
     linkedin = "https://linkedin.com"
     stack-overflow = "https://stackoverflow.com"
-    instagram = "https://stackoverflow.com"
+    instagram = "https://instagram.com"
     github = "https://github.com"
     weibo = "https://www.weibo.com"
     medium = "https://medium.com"
@@ -51,7 +51,7 @@ author = "authors"
     reddit = "https://reddit.com"
     gitlab = "https://gitlab.com"
     mastodon = "https://mastodon.social"
-    keybase = "https://keybase.io/"
+    keybase = "https://keybase.io"
 
   [params.prismJS]
     enable = true
