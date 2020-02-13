@@ -26,7 +26,7 @@ theme = "hugo-slender-poster"
 category = "categories"
 tag = "tags"
 series = "series"
-author = "authors"
+author = "author"
 
 [params]
   author = "Hugo Authors"

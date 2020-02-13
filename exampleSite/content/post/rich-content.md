@@ -1,8 +1,5 @@
 +++
-authors = [
-    "Hugo Authors",
-    "Jane Smith",
-]
+author = "Jane Smith"
 title = "Rich Content"
 date = "2019-03-10"
 description = "A brief description of Hugo Shortcodes"

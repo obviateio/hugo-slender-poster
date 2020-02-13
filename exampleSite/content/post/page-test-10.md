@@ -4,7 +4,6 @@ date: 2018-01-10
 images: []
 categories: []
 tags: []
-authors: []
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Faucibus nisl tincidunt eget nullam non nisi est sit. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Purus in massa tempor nec. Eget sit amet tellus cras adipiscing. Nulla facilisi morbi tempus iaculis urna id. Nullam non nisi est sit amet. Ut lectus arcu bibendum at varius vel pharetra vel.
 

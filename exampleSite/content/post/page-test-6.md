@@ -4,7 +4,6 @@ date: 2018-01-06
 images: []
 categories: []
 tags: []
-authors: []
 ---
 Lorem ipsum dolor amet letterpress 90's forage small batch PBR&B. Heirloom swag small batch bespoke street art chia kinfolk blog butcher dreamcatcher banjo shaman pop-up intelligentsia. Skateboard jean shorts raw denim marfa, etsy kinfolk try-hard mustache helvetica church-key dreamcatcher pok pok master cleanse. Letterpress vape raclette pabst sriracha intelligentsia direct trade portland, pop-up post-ironic jean shorts. Pop-up franzen unicorn cornhole, yr pour-over post-ironic fanny pack edison bulb. Farm-to-table ennui woke, lyft letterpress cornhole schlitz neutra bespoke man braid small batch authentic migas blue bottle.
 

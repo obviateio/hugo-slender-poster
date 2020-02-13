@@ -4,7 +4,6 @@ date: 2018-01-01
 images: []
 categories: []
 tags: []
-authors: []
 ---
 Bacon ipsum dolor amet short ribs t-bone burgdoggen pork chop biltong jowl shank ball tip jerky beef ribs beef bresaola. Pork loin tri-tip ribeye spare ribs, sirloin sausage bacon pork belly andouille ham landjaeger frankfurter. Chislic t-bone cow, meatloaf pig shank tri-tip strip steak leberkas hamburger tenderloin boudin sirloin. Short ribs shoulder cow buffalo corned beef shank flank sirloin doner frankfurter ball tip.
 

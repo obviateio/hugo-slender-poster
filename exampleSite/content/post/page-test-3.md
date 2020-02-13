@@ -4,7 +4,6 @@ date: 2018-01-03
 images: []
 categories: []
 tags: []
-authors: []
 ---
 Holystone avast Spanish Main yo-ho-ho execution dock lass Admiral of the Black Pirate Round Letter of Marque hornswaggle. Gibbet tackle topmast ahoy rigging cackle fruit fathom aft hornswaggle snow. Sail ho bring a spring upon her cable parley ahoy cog grog blossom red ensign chase cackle fruit Sink me.
 

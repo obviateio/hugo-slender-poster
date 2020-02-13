@@ -4,7 +4,6 @@ date: 2018-01-09
 images: []
 categories: []
 tags: []
-authors: []
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel pretium lectus quam id. Tristique magna sit amet purus gravida quis blandit. Quam viverra orci sagittis eu. Facilisis magna etiam tempor orci eu. Facilisis volutpat est velit egestas dui id ornare arcu. Urna duis convallis convallis tellus id interdum velit laoreet. Arcu cursus euismod quis viverra. Faucibus nisl tincidunt eget nullam non. Laoreet sit amet cursus sit amet dictum. Morbi tincidunt ornare massa eget egestas. Ultrices tincidunt arcu non sodales. Fringilla ut morbi tincidunt augue interdum.
 

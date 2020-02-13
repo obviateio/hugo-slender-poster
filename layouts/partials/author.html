@@ -1,7 +1,7 @@
 {{- if .Params.author -}}
 <ul class="authors list-inline">
     {{- with .Params.author -}}
-    {{- with $.Site.GetPage (printf "/authors/%s" (. | urlize)) -}}
+    {{- with $.Site.GetPage (printf "/author/%s" (. | urlize)) -}}
     {{- $term := . -}}
     <li class="list-inline-item mr-3">
         <div class="media author">
